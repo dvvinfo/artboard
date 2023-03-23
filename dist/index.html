@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Управление магазинами</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <div class="col-3 mobile">
+            <div class="sidebar">
+              <div class="d-flex">
+                <div class="logo logo-desktop">
+                  <img class="logo__img" src="./img/logo.png" alt="Work5" />
+                </div>
+                <button class="menu-close"><i class="bi bi-x-lg"></i></button>
+              </div>
+              <div class="nav-bar">
+                <ul class="nav">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-house-door"></i
+                      ><span class="nav__text">Главная</span></a
+                    >
+                  </li>
+                  <li class="nav__item active">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-cart3"></i
+                      ><span class="nav__text">Мои магазины</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-megaphone"></i
+                      ><span class="nav__text">Промоматериалы</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-pie-chart"></i
+                      ><span class="nav__text">Статистика</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-wallet2"></i
+                      ><span class="nav__text">Баланс</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-person"></i
+                      ><span class="nav__text">Персональные данные</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-question-circle"></i
+                      ><span class="nav__text">FAQ</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-headset"></i
+                      ><span class="nav__text">Техподдержка</span></a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#"
+                      ><i class="bi bi-box-arrow-right"></i
+                      ><span class="nav__text">Выход</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 w-100-custom">
+            <div class="content">
+              <header class="header">
+                <div class="header__content">
+                  <button class="menu-icon"><i class="bi bi-list"></i></button>
+                  <div class="logo logo-mobile">
+                    <img class="logo__img" src="./img/logo.png" alt="Work5" />
+                  </div>
+                  <div class="breadcrumbs">
+                    <div class="span breadcrumbs__text">Главная</div>
+                    <img
+                      class="breadcrumbs__arrow"
+                      src="./img/arrow-point-to-right.png"
+                      alt="arrow-point-to-right"
+                    />
+                    <div class="span breadcrumbs__text">Мои магазины</div>
+                  </div>
+                  <div class="profile-block">
+                    <div class="message">
+                      <div class="message__icon-wrapper">
+                        <img
+                          class="message__icon"
+                          src="./img/envelope.svg"
+                          alt="message"
+                        />
+                        <div class="circle">
+                          <div class="circle__small"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile">
+                      <div class="profile__img-wrapper">
+                        <img
+                          class="profile__img"
+                          src="./img/avatar.png"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="profile__name">Максим Добжанский</div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="create-button-wrapper">
+                <button
+                  class="button btn-green"
+                  id="button"
+                  data-toggle="modal"
+                  data-bs-target="#modal"
+                >
+                  <span class="button__icon"> <i class="bi bi-plus"></i> </span
+                  ><span class="button__text">Создать свой магазин</span>
+                </button>
+              </div>
+              <div class="title-wrapper">
+                <h1 class="title">Управление магазинами</h1>
+              </div>
+              <section class="table-wrapper"></section>
+              <div class="table-responsive-xl">
+                <table class="table table-hover table-main">
+                  <thead class="thead">
+                    <tr>
+                      <th scope="col">№</th>
+                      <th scope="col">Название</th>
+                      <th scope="col">Адрес</th>
+                      <th scope="col">Действие</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row" valign="middle">12345</td>
+                      <td valign="middle">Дипломная работа</td>
+                      <td valign="middle">http://www.work5.ru/services</td>
+                      <td valign="middle">
+                        <button class="button btn-green me-2">
+                          <span class="button__icon fz-18 me-1">
+                            <i class="bi bi-pencil"></i></span
+                          ><span class="button__text"
+                            >Редактировать</span
+                          ></button
+                        ><button class="button btn-gray">
+                          <span class="button__icon fz-18 me-1">
+                            <i class="bi bi-x-lg"></i></span
+                          ><span class="button__text">Редактировать</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" valign="middle">12345</td>
+                      <td valign="middle">Дипломная работа</td>
+                      <td valign="middle">http://www.work5.ru/services</td>
+                      <td valign="middle">
+                        <button class="button btn-green me-2">
+                          <span class="button__icon fz-18 me-1"
+                            ><i class="bi bi-pencil"></i></span
+                          ><span class="button__text"
+                            >Редактировать</span
+                          ></button
+                        ><button class="button btn-gray">
+                          <span class="button__icon fz-18 me-1">
+                            <i class="bi bi-x-lg"></i></span
+                          ><span class="button__text">Редактировать</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay">
+      <div
+        class="modal fade window"
+        id="modal"
+        tabindex="-1"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Создать магазин</h5>
+              <button
+                class="close"
+                id="close"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true"> <i class="bi bi-x-lg"></i></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="form" action="#">
+                <div class="select-block">
+                  <div class="select-wrapper">
+                    <h3 class="select-title">Шаблон</h3>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Стандартный</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="2">Two</option>
+                    </select>
+                  </div>
+                  <div class="select-wrapper">
+                    <h3 class="select-title">Шаблон</h3>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Классический</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="2">Two</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-block">
+                  <label class="select-title" for="input">Домен</label>
+                  <div class="input-wrapper">
+                    <input
+                      class="form-control input"
+                      type="text"
+                      placeholder="Например: ivangrozniy"
+                      id="input"
+                    /><input
+                      class="form-control input-bg"
+                      type="text"
+                      placeholder=".work5.ru"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="warning">
+                  <div class="warning__img-wrapper">
+                    <img class="warning__img" src="./img/warning.png" alt="" />
+                  </div>
+                  <div class="warning__text">
+                    В названии домена разрешены латиница и “-”, запрещается
+                    использовать словосочетание Work 5. После создания магазина
+                    Вы сможете прикрутить свой домен (например ivangrozniy.ru).
+                    Подробнее по <a class="warning__link" href="#">ссылке</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="button btn-gray"
+                id="cancel"
+                type="button"
+                data-dismiss="modal"
+              >
+                Отмена</button
+              ><button class="button btn-green" type="button">Создать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

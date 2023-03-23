@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18" width="22" height="18">
+	<title>envelope (1)</title>
+	<defs>
+		<image  width="22" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAMAAABo+94fAAAAAXNSR0IB2cksfwAAAJZQTFRFe3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7wArJNQAAADJ0Uk5TIpiwlh3L/8/9/MrENPb4NgNC6+yoCRe0tRjXMwBn9GgBMdb7fSTHJXoExjcWS/CCLpeh1Mz3AAAAlUlEQVR4nJXR2Q6CMBAF0KviVFyLgriBCAVF9v//OQPSGGhfvE+Tk8ySDDCZKpkZmJMmDAsdm1jqeIX1RtXtDtzaj/VgcdjO0R3q6ezYoMv15vk/9O/BIyQQRYLHidTkyV8RtdzVwuwOE2n8bgt8O70gC4nCLOjnoW9287Qo0lxul0xlVddVSWMe5k9mOmUwGvUNjfEBSw0P6Yp1m0cAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="envelope (1)" href="#img1" x="0" y="0"/>
+</svg>

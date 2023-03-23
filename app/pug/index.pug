@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        include modules/head
+    body
+        .wrapper
+            .container-fluid
+                .row.g-0
+                    .col-3.mobile
+                        include modules/sidebar
+                    .col-9.w-100-custom 
+                        .content 
+                            include modules/header
+                            include modules/body
+                            include modules/table
+            include modules/modal
+        include modules/scripts
+                        

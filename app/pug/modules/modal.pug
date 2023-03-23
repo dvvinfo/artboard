@@ -1,0 +1,39 @@
+block modal
+     #modal.modal.fade.window(tabindex='-1', aria-labelledby='ModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5#ModalLabel.modal-title Создать магазин
+            button#close.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') 
+                i.bi.bi-x-lg
+          .modal-body
+                form.form(action="#")
+                  .select-block
+                    .select-wrapper
+                        h3.select-title Шаблон
+                        select.form-select(aria-label='Default select example')
+                            option(selected) Стандартный
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='2') Two
+                    .select-wrapper
+                        h3.select-title Шаблон
+                        select.form-select(aria-label='Default select example')
+                            option(selected) Классический
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='2') Two
+                  .input-block 
+                    label(for="input").select-title Домен
+                    .input-wrapper 
+                      input(type="text" placeholder="Например: ivangrozniy")#input.form-control.input  
+                      input(type="text" placeholder=".work5.ru" disabled).form-control.input-bg  
+                  .warning 
+                    .warning__img-wrapper 
+                      img.warning__img(src="./img/warning.png", alt="")
+                    .warning__text В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по 
+                        a.warning__link(href="#") ссылке
+          .modal-footer
+            button#cancel.button.btn-gray(type='button', data-dismiss='modal') Отмена
+            button.button.btn-green(type='button') Создать
